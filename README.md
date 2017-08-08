@@ -1,6 +1,3 @@
-# HashLib
-fork from http://hashlib.codeplex.com
-
 Project Description
 
 Here you can find implementations of many hashing algorithms (including all sha3 round 2 and 3 candidates). You can hash files, streams, common types of data. 
@@ -152,16 +149,15 @@ HashLibQualityTest
 
 One of project in solution. Here you can test speed, quality and calculate hashes.
 
-1.png
+![ScreenShot](https://raw.github.com/K2/HashLib/master/doc/1.png)
 
-2.png
+![ScreenShot](https://raw.github.com/K2/HashLib/master/doc/2.png)
 
-3.png
-CLRTest and MFCTest
+![ScreenShot](https://raw.github.com/K2/HashLib/master/doc/3.png)CLRTest and MFCTest
 
 Temporary projects used to convert some hash functions from C++ to C++ CLI, and finally to C#.
 
-5.png
+![ScreenShot](https://raw.github.com/K2/HashLib/master/doc/5.png)
 
-6.png
-Last edited Dec 29, 2013 at 5:12 AM by tomanu, version 51
+
+![ScreenShot](https://raw.github.com/K2/HashLib/master/doc/6.png)
