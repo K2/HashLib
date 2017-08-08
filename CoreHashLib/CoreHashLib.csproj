@@ -1,0 +1,145 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description>NetCoreApp2.0 build of HashLib forked from codeplex</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\HashLib\Checksum\Adler32.cs" Link="Checksum\Adler32.cs" />
+    <Compile Include="..\HashLib\Checksum\CRC32.cs" Link="Checksum\CRC32.cs" />
+    <Compile Include="..\HashLib\Checksum\CRC64.cs" Link="Checksum\CRC64.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\MD5CryptoServiceProvider.cs" Link="Crypto\BuildIn\MD5CryptoServiceProvider.cs" />
+    <None Include="..\HashLib\Crypto\BuildIn\RIPEMD160Managed .cs" Link="Crypto\BuildIn\RIPEMD160Managed .cs" />
+    <None Include="..\HashLib\Crypto\BuildIn\SHA1Cng.cs" Link="Crypto\BuildIn\SHA1Cng.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA1CryptoServiceProvider.cs" Link="Crypto\BuildIn\SHA1CryptoServiceProvider.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA1Managed.cs" Link="Crypto\BuildIn\SHA1Managed.cs" />
+    <None Include="..\HashLib\Crypto\BuildIn\SHA256Cng.cs" Link="Crypto\BuildIn\SHA256Cng.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA256CryptoServiceProvider.cs" Link="Crypto\BuildIn\SHA256CryptoServiceProvider.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA256Managed.cs" Link="Crypto\BuildIn\SHA256Managed.cs" />
+    <None Include="..\HashLib\Crypto\BuildIn\SHA384Cng.cs" Link="Crypto\BuildIn\SHA384Cng.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA384CryptoServiceProvider.cs" Link="Crypto\BuildIn\SHA384CryptoServiceProvider.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA384Managed.cs" Link="Crypto\BuildIn\SHA384Managed.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA512Cng.cs" Link="Crypto\BuildIn\SHA512Cng.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA512CryptoServiceProvider.cs" Link="Crypto\BuildIn\SHA512CryptoServiceProvider.cs" />
+    <Compile Include="..\HashLib\Crypto\BuildIn\SHA512Managed.cs" Link="Crypto\BuildIn\SHA512Managed.cs" />
+    <Compile Include="..\HashLib\Crypto\Gost.cs" Link="Crypto\Gost.cs" />
+    <Compile Include="..\HashLib\Crypto\Grindahl256.cs" Link="Crypto\Grindahl256.cs" />
+    <Compile Include="..\HashLib\Crypto\Grindahl512.cs" Link="Crypto\Grindahl512.cs" />
+    <Compile Include="..\HashLib\Crypto\HAS160.cs" Link="Crypto\HAS160.cs" />
+    <Compile Include="..\HashLib\Crypto\Haval.cs" Link="Crypto\Haval.cs" />
+    <Compile Include="..\HashLib\Crypto\MD2.cs" Link="Crypto\MD2.cs" />
+    <Compile Include="..\HashLib\Crypto\MD4.cs" Link="Crypto\MD4.cs" />
+    <Compile Include="..\HashLib\Crypto\MD5.cs" Link="Crypto\MD5.cs" />
+    <Compile Include="..\HashLib\Crypto\MDBase.cs" Link="Crypto\MDBase.cs" />
+    <Compile Include="..\HashLib\Crypto\Panama.cs" Link="Crypto\Panama.cs" />
+    <Compile Include="..\HashLib\Crypto\RadioGatun32.cs" Link="Crypto\RadioGatun32.cs" />
+    <Compile Include="..\HashLib\Crypto\RadioGatun64.cs" Link="Crypto\RadioGatun64.cs" />
+    <Compile Include="..\HashLib\Crypto\RIPEMD.cs" Link="Crypto\RIPEMD.cs" />
+    <Compile Include="..\HashLib\Crypto\RIPEMD128.cs" Link="Crypto\RIPEMD128.cs" />
+    <Compile Include="..\HashLib\Crypto\RIPEMD160.cs" Link="Crypto\RIPEMD160.cs" />
+    <Compile Include="..\HashLib\Crypto\RIPEMD256.cs" Link="Crypto\RIPEMD256.cs" />
+    <Compile Include="..\HashLib\Crypto\RipeMD320.cs" Link="Crypto\RipeMD320.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA0.cs" Link="Crypto\SHA0.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA1.cs" Link="Crypto\SHA1.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA224.cs" Link="Crypto\SHA224.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA256.cs" Link="Crypto\SHA256.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA256Base.cs" Link="Crypto\SHA256Base.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA384.cs" Link="Crypto\SHA384.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Blake.cs" Link="Crypto\SHA3\Blake.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\BlueMidnightWish.cs" Link="Crypto\SHA3\BlueMidnightWish.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\CubeHash.cs" Link="Crypto\SHA3\CubeHash.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Echo.cs" Link="Crypto\SHA3\Echo.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Fugue.cs" Link="Crypto\SHA3\Fugue.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Groestl.cs" Link="Crypto\SHA3\Groestl.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Hamsi.cs" Link="Crypto\SHA3\Hamsi.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\JH.cs" Link="Crypto\SHA3\JH.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Keccak.cs" Link="Crypto\SHA3\Keccak.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Luffa.cs" Link="Crypto\SHA3\Luffa.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Shabal.cs" Link="Crypto\SHA3\Shabal.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\SHAvite3.cs" Link="Crypto\SHA3\SHAvite3.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\SIMD.cs" Link="Crypto\SHA3\SIMD.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA3\Skein.cs" Link="Crypto\SHA3\Skein.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA512.cs" Link="Crypto\SHA512.cs" />
+    <Compile Include="..\HashLib\Crypto\SHA512Base.cs" Link="Crypto\SHA512Base.cs" />
+    <Compile Include="..\HashLib\Crypto\Snefru.cs" Link="Crypto\Snefru.cs" />
+    <Compile Include="..\HashLib\Crypto\Tiger.cs" Link="Crypto\Tiger.cs" />
+    <Compile Include="..\HashLib\Crypto\Tiger2.cs" Link="Crypto\Tiger2.cs" />
+    <Compile Include="..\HashLib\Crypto\Whirlpool.cs" Link="Crypto\Whirlpool.cs" />
+    <Compile Include="..\HashLib\Extensions\ArrayExtensions.cs" Link="Extensions\ArrayExtensions.cs" />
+    <Compile Include="..\HashLib\Extensions\Bits.cs" Link="Extensions\Bits.cs" />
+    <Compile Include="..\HashLib\Extensions\Converters.cs" Link="Extensions\Converters.cs" />
+    <Compile Include="..\HashLib\Extensions\TypeExtensions.cs" Link="Extensions\TypeExtensions.cs" />
+    <Compile Include="..\HashLib\Hash.cs" Link="Hash.cs" />
+    <Compile Include="..\HashLib\Hash128\Murmur3_128.cs" Link="Hash128\Murmur3_128.cs" />
+    <Compile Include="..\HashLib\Hash32\AP.cs" Link="Hash32\AP.cs" />
+    <Compile Include="..\HashLib\Hash32\Bernstein.cs" Link="Hash32\Bernstein.cs" />
+    <Compile Include="..\HashLib\Hash32\Bernstein1.cs" Link="Hash32\Bernstein1.cs" />
+    <Compile Include="..\HashLib\Hash32\BKDR.cs" Link="Hash32\BKDR.cs" />
+    <Compile Include="..\HashLib\Hash32\DEK.cs" Link="Hash32\DEK.cs" />
+    <Compile Include="..\HashLib\Hash32\DJB.cs" Link="Hash32\DJB.cs" />
+    <Compile Include="..\HashLib\Hash32\DotNet.cs" Link="Hash32\DotNet.cs" />
+    <Compile Include="..\HashLib\Hash32\ELF.cs" Link="Hash32\ELF.cs" />
+    <Compile Include="..\HashLib\Hash32\FNV.cs" Link="Hash32\FNV.cs" />
+    <Compile Include="..\HashLib\Hash32\FNV1a.cs" Link="Hash32\FNV1a.cs" />
+    <Compile Include="..\HashLib\Hash32\Jenkins3.cs" Link="Hash32\Jenkins3.cs" />
+    <Compile Include="..\HashLib\Hash32\JS.cs" Link="Hash32\JS.cs" />
+    <Compile Include="..\HashLib\Hash32\Murmur2.cs" Link="Hash32\Murmur2.cs" />
+    <Compile Include="..\HashLib\Hash32\Murmur3.cs" Link="Hash32\Murmur3.cs" />
+    <Compile Include="..\HashLib\Hash32\OneAtTime.cs" Link="Hash32\OneAtTime.cs" />
+    <Compile Include="..\HashLib\Hash32\PJW.cs" Link="Hash32\PJW.cs" />
+    <Compile Include="..\HashLib\Hash32\Rotating.cs" Link="Hash32\Rotating.cs" />
+    <Compile Include="..\HashLib\Hash32\RS.cs" Link="Hash32\RS.cs" />
+    <Compile Include="..\HashLib\Hash32\SDBM.cs" Link="Hash32\SDBM.cs" />
+    <Compile Include="..\HashLib\Hash32\ShiftAndXor.cs" Link="Hash32\ShiftAndXor.cs" />
+    <Compile Include="..\HashLib\Hash32\SuperFast.cs" Link="Hash32\SuperFast.cs" />
+    <Compile Include="..\HashLib\Hash64\FNV1a64.cs" Link="Hash64\FNV1a64.cs" />
+    <Compile Include="..\HashLib\Hash64\FNV64.cs" Link="Hash64\FNV64.cs" />
+    <Compile Include="..\HashLib\Hash64\Murmur2_64.cs" Link="Hash64\Murmur2_64.cs" />
+    <Compile Include="..\HashLib\Hash64\SipHash.cs" Link="Hash64\SipHash.cs" />
+    <Compile Include="..\HashLib\HashAlgorithmWrapper.cs" Link="HashAlgorithmWrapper.cs" />
+    <Compile Include="..\HashLib\HashBuffer.cs" Link="HashBuffer.cs" />
+    <Compile Include="..\HashLib\HashCryptoBuildIn.cs" Link="HashCryptoBuildIn.cs" />
+    <Compile Include="..\HashLib\HashCryptoNotBuildIn.cs" Link="HashCryptoNotBuildIn.cs" />
+    <Compile Include="..\HashLib\Hashes.cs" Link="Hashes.cs" />
+    <Compile Include="..\HashLib\HashFactory.cs" Link="HashFactory.cs" />
+    <Compile Include="..\HashLib\HashResult.cs" Link="HashResult.cs" />
+    <Compile Include="..\HashLib\HashRounds.cs" Link="HashRounds.cs" />
+    <Compile Include="..\HashLib\HashSize.cs" Link="HashSize.cs" />
+    <Compile Include="..\HashLib\HMACBuildInAdapter.cs" Link="HMACBuildInAdapter.cs" />
+    <Compile Include="..\HashLib\HMACNotBuildInAdapter.cs" Link="HMACNotBuildInAdapter.cs" />
+    <Compile Include="..\HashLib\IHash.cs" Link="IHash.cs" />
+    <Compile Include="..\HashLib\IHashInfo.cs" Link="IHashInfo.cs" />
+    <Compile Include="..\HashLib\MultipleTransformsNonBlock.cs" Link="MultipleTransformsNonBlock.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Checksum\" />
+    <Folder Include="Crypto\BuildIn\" />
+    <Folder Include="Crypto\SHA3\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Hash128\" />
+    <Folder Include="Hash32\" />
+    <Folder Include="Hash64\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.Contracts" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Cng" Version="4.4.0-preview2-25405-01" />
+    <PackageReference Include="System.Security.Cryptography.Csp" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Encoding" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.Primitives" Version="4.3.0" />
+    <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>
